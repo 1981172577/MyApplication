@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.myapplication.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        app:animator_time="1800"
+        android:layout_height="match_parent"
+        app:start_color="@color/colorPrimary"
+        app:end_color="@color/pressed_color"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.example.myapplication.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:animator_time="1400"
+        app:start_color="@color/pressed_color"
+        app:end_color="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.example.myapplication.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:animator_time="2400"
+        app:start_color="#998DC21F"
+        app:end_color="#337DCCF3"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

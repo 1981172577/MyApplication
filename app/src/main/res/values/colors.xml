@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FA8DC21F</color>
+    <color name="colorPrimaryDark">#8DC21F</color>
+    <color name="colorAccent">#8DC21F</color>
+    <!--按钮点击之后的颜色-->
+    <color name="pressed_color">#337DCCF3</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".MyApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".parallax.ParallaxActivity"/>
+        <activity android:name=".WaveView.WaveActivity"/>
+        <activity android:name=".PressFrameLayout.PressFrameActivity"/>
+        <activity android:name=".module.canvas.CanvasActivity"/>
+        <activity android:name=".module.thread.TestKotlin"/>
+        <activity android:name=".module.files.FileTestActivity"/>
+        <activity android:name=".module.result_api.ResultApiActivity"/>
+        <activity android:name=".module.paging.PagingActivity"/>
+
+    </application>
+
+</manifest>

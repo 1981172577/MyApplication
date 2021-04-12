@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WaveView">
+        <attr name="start_color" format="color"/>
+        <attr name="end_color" format="color"/>
+        <attr name="wave_height" format="dimension"/>
+        <attr name="delay_time" format="integer"/>
+        <attr name="animator_time" format="integer"/>
+    </declare-styleable>
+</resources>
