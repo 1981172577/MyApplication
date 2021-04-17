@@ -16,6 +16,7 @@ import com.example.myapplication.module.paging.PagingActivity
 import com.example.myapplication.module.result_api.ResultApiActivity
 import com.example.myapplication.module.thread.TestKotlin
 import com.example.myapplication.parallax.ParallaxActivity
+import com.example.myapplication.setvices.MyService
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.InternalCoroutinesApi
 
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main), OnItemClickListe
         }
         mainAdapter.setOnItemClickListener(this)
         mainAdapter.setNewInstance(initClassName())
+
+        val intent = Intent(this, MyService::class.java)
+        startService(intent)
     }
 
     private fun initClassName() : ArrayList<Class<*>>{

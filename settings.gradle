@@ -1,2 +1,3 @@
+include ':leet_lib'
 include ':app'
 rootProject.name = "My Application"
